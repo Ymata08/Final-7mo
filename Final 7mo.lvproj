@@ -13,12 +13,8 @@ It has been developed with the Actor Framework and with the use of new tools rec
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Abstract" Type="Folder" URL="../Abstract">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="Implementation" Type="Folder" URL="../Implementation">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
+		<Item Name="Abstract" Type="Folder"/>
+		<Item Name="Implementation" Type="Folder"/>
 		<Item Name="Unit Tes" Type="Folder">
 			<Item Name="Test ADC command.lvclass" Type="LVClass" URL="../UI Actor/Send ADC command/Test ADC command.lvclass"/>
 		</Item>
@@ -326,9 +322,11 @@ It has been developed with the Actor Framework and with the use of new tools rec
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="Serial Device.lvclass" Type="LVClass" URL="../Abstract/Serial Device/Serial Device.lvclass"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="visa tool.vi" Type="VI" URL="../Abstract/Serial Device/visa tool.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
